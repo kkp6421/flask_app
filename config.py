@@ -6,14 +6,14 @@ class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     FLASK_MAIL_SUBJECT_PREFIX = '[flask_app]'
-    FLASK_MAIL_SENDER = 'tomo18330228@gmail.com'
+    FLASK_MAIL_SENDER = os.environ['MAIL_USERNAME']
     FLASK_ADMIN = os.environ.get('FLASK_ADMIN')
     SAMPLE_MAIL_SUBJECT_PREFIX = 'Flask_app'
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
-    MAIL_USERNAME = 'tomo18330228@gmail.com'
-    MAIL_PASSWORD = 'FJ18081wr'
+    MAIL_USERNAME = os.environ['MAIL_USERNAME']
+    MAIL_PASSWORD = os.environ['MAIL_PASSWORD']
     @staticmethod
     def init_app(app):
         pass
