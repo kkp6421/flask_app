@@ -7,7 +7,7 @@ class Config:
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     FLASK_MAIL_SUBJECT_PREFIX = '[flask_app]'
     FLASK_MAIL_SENDER = os.environ['MAIL_USERNAME']
-    FLASK_ADMIN = os.environ.get['FLASK_ADMIN']
+    FLASK_ADMIN = os.environ['FLASK_ADMIN']
     SAMPLE_MAIL_SUBJECT_PREFIX = 'Flask_app'
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
