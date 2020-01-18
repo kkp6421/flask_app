@@ -1,0 +1,10 @@
+flask
+redis
+flask-wtf
+flask-bootstrap
+flask-sqlalchemy
+flask-migrate
+flask-script
+flask-mail
+flask-moment
+flask-login
